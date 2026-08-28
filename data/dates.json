@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "dates": [
+    { "event": "Submission deadline", "date": "TBD" },
+    { "event": "Notification of acceptance", "date": "TBD" },
+    { "event": "Camera-ready deadline", "date": "TBD" },
+    { "event": "Workshop date", "date": "TBD" }
+  ]
+}

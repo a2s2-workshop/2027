@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "sessions": [
+    { "time": "TBD", "title": "Opening Remarks",     "type": "plenary" },
+    { "time": "TBD", "title": "Invited Talk 1",      "type": "talk",    "speaker": "TBD" },
+    { "time": "TBD", "title": "Lightning Talks",     "type": "talks" },
+    { "time": "TBD", "title": "Break",               "type": "break" },
+    { "time": "TBD", "title": "Breakout Sessions",   "type": "breakout" },
+    { "time": "TBD", "title": "Lunch",               "type": "break" },
+    { "time": "TBD", "title": "Invited Talk 2",      "type": "talk",    "speaker": "TBD" },
+    { "time": "TBD", "title": "Panel Discussion",    "type": "panel" },
+    { "time": "TBD", "title": "Break",               "type": "break" },
+    { "time": "TBD", "title": "Synthesis & Next Steps", "type": "plenary" },
+    { "time": "TBD", "title": "Closing Remarks",     "type": "plenary" }
+  ]
+}

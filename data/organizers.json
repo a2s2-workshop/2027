@@ -1,0 +1,136 @@
+{
+  "organizers": [
+    {
+      "name": "Organizer One",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-one",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizer Two",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-two",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizer Three",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-three",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizer Four",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-four",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizer Five",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-five",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizer Six",
+      "affiliation": "Affiliation TBD",
+      "email_user": "organizer-six",
+      "email_domain": "example.edu",
+      "photo": "assets/img/organizers/placeholder.svg",
+      "website": "#",
+      "links": [
+        {
+          "label": "Bluesky",
+          "url": "#"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "#"
+        },
+        {
+          "label": "GitHub",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}
