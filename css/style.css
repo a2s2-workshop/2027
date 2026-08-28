@@ -322,7 +322,7 @@ a.editions-row .editions-year {
 
 .org-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -372,7 +372,7 @@ a.org-card-name:hover { color: var(--color-accent-warm); }
   font-size: 0.75rem;
   color: var(--color-text-faint);
   text-decoration: none;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .org-card-email:hover { color: var(--color-accent-warm); }
