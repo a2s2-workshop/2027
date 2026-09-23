@@ -74,10 +74,4 @@ dropped**, so add the icon first.
 
 ## TODO
 
-- `data/organizers.json` holds six placeholders (`Organizer One` … `Organizer
-  Six`). For each, replace `name`, `affiliation`, `email_user`, `email_domain`,
-  `website`, and every `links[].url` — all currently `#`. Delete any social
-  link an organizer does not have rather than leaving it as `#`.
-- Drop headshots into `assets/img/organizers/` and point `photo` at them,
-  replacing `placeholder.svg`. Compress them first; these load on every visit.
 - Fill in the CHI 2027 venue and dates, then flip `enabled` in `data/dates.json`.

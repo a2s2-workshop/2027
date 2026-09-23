@@ -1,134 +1,166 @@
 {
   "organizers": [
     {
-      "name": "Organizer One",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-one",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "Jack Bandy",
+      "affiliation": "University of Illinois Chicago, USA",
+      "email_user": "jxb",
+      "email_domain": "uic.edu",
+      "photo": "assets/img/organizers/bandy.jpg",
+      "website": "https://jackbandy.com/",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
-        },
-        {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=EtAsULoAAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jackbandy/"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/jackbandy.com"
         }
       ]
     },
     {
-      "name": "Organizer Two",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-two",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "Matthew R. DeVerna",
+      "affiliation": "Stanford University, USA",
+      "email_user": "mdeverna",
+      "email_domain": "stanford.edu",
+      "photo": "assets/img/organizers/deverna.jpg",
+      "website": "https://www.matthewdeverna.com/",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
-        },
-        {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=bhEp-joAAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/matthew-deverna-28535137/"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/matthewdeverna.com"
         }
       ]
     },
     {
-      "name": "Organizer Three",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-three",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "Ro Encarnación",
+      "affiliation": "University of Pennsylvania, USA",
+      "email_user": "rone",
+      "email_domain": "seas.upenn.edu",
+      "photo": "assets/img/organizers/encarnacion.jpg",
+      "website": "https://roencarnacion.com/",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
-        },
-        {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=tw3w9uEAAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/rosemariele"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/rone.bsky.social"
         }
       ]
     },
     {
-      "name": "Organizer Four",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-four",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "David Hartmann",
+      "affiliation": "TU Berlin & Weizenbaum Institute, Germany",
+      "email_user": "d.hartmann",
+      "email_domain": "tu-berlin.de",
+      "photo": "assets/img/organizers/hartmann.jpg",
+      "website": "https://hartmanndavid.com",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
-        },
-        {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=t0Aljh0AAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/david-hartmann-42780020b"
         }
       ]
     },
     {
-      "name": "Organizer Five",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-five",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "Danaé Metaxa",
+      "affiliation": "University of Pennsylvania, USA",
+      "email_user": "metaxa",
+      "email_domain": "upenn.edu",
+      "photo": "assets/img/organizers/metaxa.jpg",
+      "website": "https://metaxa.net/",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
-        },
-        {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=6pA2wn4AAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dmetaxak/"
         }
       ]
     },
     {
-      "name": "Organizer Six",
-      "affiliation": "Affiliation TBD",
-      "email_user": "organizer-six",
-      "email_domain": "example.edu",
-      "photo": "assets/img/organizers/placeholder.svg",
-      "website": "#",
+      "name": "Victor Ojewale",
+      "affiliation": "Brown University, USA",
+      "email_user": "victor_ojewale",
+      "email_domain": "brown.edu",
+      "photo": "assets/img/organizers/ojewale.jpg",
+      "website": "https://victorojewale.github.io/",
       "links": [
         {
-          "label": "Bluesky",
-          "url": "#"
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=NMnrvgoAAAAJ"
         },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/elvictor/"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/victorojewale.bsky.social"
+        }
+      ]
+    },
+    {
+      "name": "Bogdana Rakova",
+      "affiliation": "DLA Piper",
+      "email_user": "b.rakova",
+      "email_domain": "gmail.com",
+      "photo": "assets/img/organizers/rakova.jpg",
+      "website": "https://bobirakova.com/",
+      "links": [
         {
           "label": "Google Scholar",
-          "url": "#"
+          "url": "https://scholar.google.com/citations?user=OoqOWncAAAAJ"
         },
         {
-          "label": "GitHub",
-          "url": "#"
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/bogdanarakova/"
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/bobirakova"
+        }
+      ]
+    },
+    {
+      "name": "Piotr Sapiezynski",
+      "affiliation": "Technical University of Denmark, Denmark",
+      "email_user": "pisa",
+      "email_domain": "dtu.dk",
+      "photo": "assets/img/organizers/sapiezynski.jpg",
+      "website": "https://sapiezynski.com/",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=3UZwE6sAAAAJ"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/sapiezynski.bsky.social"
         }
       ]
     }
