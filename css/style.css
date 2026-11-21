@@ -394,6 +394,37 @@ a.editions-row .editions-year {
 
 /* ---------- ORGANIZERS: card grid (year sites) ---------- */
 
+/* Heading row: the order controls sit level with the h2's baseline. */
+.org-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+section .org-header h2 { margin-bottom: 0; }
+
+.org-order {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.org-order-btn {
+  background: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.25rem 0.35rem;
+  opacity: 0.55;
+}
+
+.org-order-btn:hover,
+.org-order-btn[aria-pressed="true"] { opacity: 1; }
+.org-order-btn[aria-pressed="true"] { border-bottom-color: var(--color-accent-warm); }
+.org-order-btn:focus-visible { outline: 2px solid var(--color-accent-warm); outline-offset: 1px; }
+
 .org-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -405,9 +436,7 @@ a.editions-row .editions-year {
   gap: 0.85rem;
   padding: 0.9rem 0.9rem 0.9rem 0.8rem;
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
   border-left: 2px solid var(--color-accent-warm);
-  border-radius: 4px;
 }
 
 .org-card-photo {
@@ -415,7 +444,7 @@ a.editions-row .editions-year {
   height: 56px;
   flex-shrink: 0;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 50%;
   background: var(--color-badge-bg);
 }
 

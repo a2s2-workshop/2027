@@ -35,38 +35,78 @@ function iconsFor(links) {
   }, '');
 }
 
+/* Organizer order is shuffled on every page load so no one is permanently
+   first. The PRNG (mulberry32) is seeded from the current time; the 🔀 button
+   reshuffles with a fresh seed and 🔤 sorts A–Z by last name. */
+
+function mulberry32(seed) {
+  return () => {
+    seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+    let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+function shuffled(list, seed) {
+  const rand = mulberry32(seed);
+  const out = [...list];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+const lastName = org => org.name.trim().split(/\s+/).pop();
+
+function sortedAZ(list) {
+  return [...list].sort((a, b) =>
+    lastName(a).localeCompare(lastName(b)) || a.name.localeCompare(b.name));
+}
+
+function renderOrganizers(grid, organizers) {
+  grid.innerHTML = organizers.map(org => {
+    const nameHtml = org.website
+      ? `<a href="${org.website}" class="org-card-name" ${EXT_LINK}>${org.name}</a>`
+      : `<span class="org-card-name">${org.name}</span>`;
+    // Email is stored split across two fields in organizers.json to prevent
+    // simple scrapers from harvesting full addresses from the raw source.
+    // Assembled here at render time so mailto: links still work normally.
+    const emailHtml = (org.email_user && org.email_domain)
+      ? `<a href="mailto:${org.email_user}@${org.email_domain}" class="org-card-email">${org.email_user}@${org.email_domain}</a>`
+      : '';
+    const icons = iconsFor(org.links);
+    const photoHtml = org.photo
+      ? `<img src="${org.photo}" alt="${org.name}" class="org-card-photo">`
+      : '';
+    return `<div class="org-card">
+      ${photoHtml}
+      <div class="org-card-info">
+        ${nameHtml}
+        <span class="org-card-affil">${org.affiliation}</span>
+        ${emailHtml}
+        ${icons ? `<span class="org-card-icons">${icons}</span>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  // A missing headshot degrades to a text-only card rather than a broken image.
+  grid.querySelectorAll('.org-card-photo').forEach(img =>
+    img.addEventListener('error', () => { img.style.display = 'none'; })
+  );
+}
+
 async function loadOrganizers() {
   const grid = document.getElementById('org-grid');
+  const buttons = document.querySelectorAll('.org-order-btn');
   try {
     const { organizers } = await fetchJSON('data/organizers.json');
-    grid.innerHTML = organizers.map(org => {
-      const nameHtml = org.website
-        ? `<a href="${org.website}" class="org-card-name" ${EXT_LINK}>${org.name}</a>`
-        : `<span class="org-card-name">${org.name}</span>`;
-      // Email is stored split across two fields in organizers.json to prevent
-      // simple scrapers from harvesting full addresses from the raw source.
-      // Assembled here at render time so mailto: links still work normally.
-      const emailHtml = (org.email_user && org.email_domain)
-        ? `<a href="mailto:${org.email_user}@${org.email_domain}" class="org-card-email">${org.email_user}@${org.email_domain}</a>`
-        : '';
-      const icons = iconsFor(org.links);
-      const photoHtml = org.photo
-        ? `<img src="${org.photo}" alt="${org.name}" class="org-card-photo">`
-        : '';
-      return `<div class="org-card">
-        ${photoHtml}
-        <div class="org-card-info">
-          ${nameHtml}
-          <span class="org-card-affil">${org.affiliation}</span>
-          ${emailHtml}
-          ${icons ? `<span class="org-card-icons">${icons}</span>` : ''}
-        </div>
-      </div>`;
-    }).join('');
-    // A missing headshot degrades to a text-only card rather than a broken image.
-    grid.querySelectorAll('.org-card-photo').forEach(img =>
-      img.addEventListener('error', () => { img.style.display = 'none'; })
-    );
+    const apply = order => {
+      renderOrganizers(grid, order === 'az' ? sortedAZ(organizers) : shuffled(organizers, Date.now()));
+      buttons.forEach(b => b.setAttribute('aria-pressed', b.dataset.order === order));
+    };
+    buttons.forEach(b => b.addEventListener('click', () => apply(b.dataset.order)));
+    apply('shuffle');
   } catch {
     grid.innerHTML = '<p class="data-error">Could not load organizer data.</p>';
   }

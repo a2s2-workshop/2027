@@ -96,7 +96,13 @@
     </section>
 
     <section id="organizers">
-      <h2>Organizers</h2>
+      <div class="org-header">
+        <h2>Organizers</h2>
+        <div class="org-order" role="group" aria-label="Organizer order">
+          <button type="button" class="org-order-btn" data-order="shuffle" aria-pressed="true" title="Shuffle order" aria-label="Shuffle order">🔀</button>
+          <button type="button" class="org-order-btn" data-order="az" aria-pressed="false" title="Sort A–Z by last name" aria-label="Sort A–Z by last name">🔤</button>
+        </div>
+      </div>
       <div class="org-grid" id="org-grid"></div>
     </section>
 
