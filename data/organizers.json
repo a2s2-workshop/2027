@@ -129,6 +129,24 @@
       ]
     },
     {
+      "name": "Deb Raji",
+      "affiliation": "Institute for Advanced Study, USA",
+      "email_user": "rajiinio",
+      "email_domain": "berkeley.edu",
+      "photo": "assets/img/organizers/raji.jpg",
+      "website": "https://rajiinio.github.io/",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=pzw1-J4AAAAJ"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/rajiinio.bsky.social"
+        }
+      ]
+    },
+    {
       "name": "Bogdana Rakova",
       "affiliation": "DLA Piper",
       "email_user": "b.rakova",
@@ -147,6 +165,28 @@
         {
           "label": "X",
           "url": "https://twitter.com/bobirakova"
+        }
+      ]
+    },
+    {
+      "name": "Ronald E. Robertson",
+      "affiliation": "Stanford University, USA",
+      "email_user": "ronalder",
+      "email_domain": "stanford.edu",
+      "photo": "assets/img/organizers/robertson.jpg",
+      "website": "https://ronalderobertson.com/",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=tyTlG34AAAAJ"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ronald-e-robertson/"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/rer.bsky.social"
         }
       ]
     },
