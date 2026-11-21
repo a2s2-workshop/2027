@@ -165,7 +165,9 @@ nav {
 
 .content { padding-bottom: 4rem; }
 
-section { margin-bottom: 3.25rem; }
+/* scroll-margin-top keeps the heading clear of the sticky nav when a nav
+   link jumps to a section. */
+section { margin-bottom: 3.25rem; scroll-margin-top: 5.5rem; }
 
 /* The "instrument" motif: every section heading is preceded by a short rust
    tick-rule, like a mark on a measuring scale. */
