@@ -1,6 +1,6 @@
 # 2027
 
-Site for **A²S² 2027** — the first edition of the *AI Auditing of
+Site for **A²S² 2027** — the first edition of the *Auditing AI and
 Sociotechnical Systems* workshop, accepted at CHI 2027 (Pittsburgh, PA, May 10–14, 2027).
 
 Served at <https://a2s2-workshop.github.io/2027/>. The workshop's landing site

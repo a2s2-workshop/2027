@@ -1,16 +1,13 @@
 {
   "enabled": false,
   "sessions": [
-    { "time": "TBD", "title": "Opening Remarks",     "type": "plenary" },
-    { "time": "TBD", "title": "Invited Talk 1",      "type": "talk",    "speaker": "TBD" },
-    { "time": "TBD", "title": "Lightning Talks",     "type": "talks" },
-    { "time": "TBD", "title": "Break",               "type": "break" },
-    { "time": "TBD", "title": "Breakout Sessions",   "type": "breakout" },
-    { "time": "TBD", "title": "Lunch",               "type": "break" },
-    { "time": "TBD", "title": "Invited Talk 2",      "type": "talk",    "speaker": "TBD" },
-    { "time": "TBD", "title": "Panel Discussion",    "type": "panel" },
-    { "time": "TBD", "title": "Break",               "type": "break" },
-    { "time": "TBD", "title": "Synthesis & Next Steps", "type": "plenary" },
-    { "time": "TBD", "title": "Closing Remarks",     "type": "plenary" }
+    { "time": "10 min", "title": "Introduction and welcome",   "type": "presentation" },
+    { "time": "TBD",    "title": "Lightning talks",            "type": "presentation" },
+    { "time": "5 min",  "title": "Break",                      "type": "break" },
+    { "time": "45 min", "title": "“Inspect element” activity", "type": "hands-on activity" },
+    { "time": "5 min",  "title": "Break",                      "type": "break" },
+    { "time": "45 min", "title": "Invited speaker (or small group breakout activity)", "type": "speaker(s) or small group" },
+    { "time": "10 min", "title": "Concluding remarks",         "type": "large group discussion" },
+    { "time": "TBD",    "title": "Mingling",                   "type": "social" }
   ]
 }
