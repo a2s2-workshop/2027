@@ -1,7 +1,7 @@
 # 2027
 
 Site for **A²S² 2027** — the first edition of the *AI Auditing of
-Sociotechnical Systems* workshop, proposed for CHI 2027.
+Sociotechnical Systems* workshop, accepted at CHI 2027 (Pittsburgh, PA, May 10–14, 2027).
 
 Served at <https://a2s2-workshop.github.io/2027/>. The workshop's landing site
 lives in [`a2s2-workshop.github.io`](https://github.com/a2s2-workshop/a2s2-workshop.github.io).
@@ -74,4 +74,4 @@ dropped**, so add the icon first.
 
 ## TODO
 
-- Fill in the CHI 2027 venue and dates, then flip `enabled` in `data/dates.json`.
+- Fill in the workshop date and submission deadlines, then flip `enabled` in `data/dates.json`.

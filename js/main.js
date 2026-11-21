@@ -81,7 +81,7 @@ async function loadDates() {
   try {
     const data = await fetchJSON('data/dates.json');
     if (!data.enabled) {
-      container.innerHTML = '<p class="tba-notice">Important dates will be announced soon.</p>';
+      container.innerHTML = '<p class="tba-notice">CHI 2027 takes place May 10&ndash;14, 2027 in Pittsburgh, PA. The workshop date and submission deadlines will be announced soon.</p>';
       return;
     }
     container.innerHTML = `<table>
