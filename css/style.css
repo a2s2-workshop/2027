@@ -149,14 +149,21 @@ nav {
 .hero-event {
   margin-top: 0.9rem;
   font-family: var(--font-display);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-text-muted);
 }
 
-.hero-event span { margin: 0 0.35em; color: var(--color-text-faint); }
+.hero-dates {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--color-text-subtle);
+}
+
+.hero-event span,
+.hero-dates span { margin: 0 0.35em; color: var(--color-text-faint); }
 
 /* Signature motion: the initials settle into place in reading order. */
 @keyframes settle {
@@ -470,4 +477,11 @@ footer {
 
   .editions-row { grid-template-columns: 4rem 1fr; }
   .editions-row .editions-location { grid-column: 2; }
+}
+
+/* On phones the event and date lines no longer fit on one row: drop the
+   separator dot and let it act as the line break, so each half gets a clean line. */
+@media (max-width: 480px) {
+  .hero-event span,
+  .hero-dates span { display: block; height: 0; margin: 0; overflow: hidden; }
 }
